@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Form";
+}
+
+<h2>Form</h2>
+<form action="~/Views/Student/Submit.cshtml" method="get"></form>
+<input type="text" class="form-control" placeholder="Name" />
+<input type="text" class="form-control" placeholder="Id" />
+<input type="text" class="form-control" placeholder="age" />
+<input type="email" class="form-control" placeholder="email" />
+
+
+<h5>Gender</h5>
+<input type="radio" name="Gender" value="Male" />
+<label for="Male">Male</label>
+<input type="radio" name="Gender" value="Female" />
+<label for="Female">Female</label>
+
+<h5>Dept</h5>
+<select name="Dept">
+    <option value="CSE">CSE</option>
+    <option value="BBA">BBA</option>
+</select>
+<input type="submit" value="Create" />
+
+</form>

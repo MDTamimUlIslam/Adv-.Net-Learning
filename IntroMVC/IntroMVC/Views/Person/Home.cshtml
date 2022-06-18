@@ -1,0 +1,33 @@
+﻿@model List<IntroMVC.Models.person>
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
+}
+
+<h2>Home</h2>
+
+<h2>Name :@ViewBag.NAME</h2>
+<h2>ID   :@ViewBag.Id</h2>
+<h2>DOB  :@ViewBag.DOB</h2>
+
+<h2>Name :@ViewData["Name"]</h2>
+<h2>Name :@ViewData["ID"]</h2>
+<h2>Name :@ViewData["dob"]</h2>
+
+
+<table class="table table-bordered">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Dob</td>
+    </tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.id</td>
+            <td>@p.Name</td>
+            <td>@p.Dob</td>
+        </tr>
+
+    }
+</table>

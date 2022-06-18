@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <html>
+        <head>
+            <title>Login Admin</title>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+            <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet">
+            <link href="css/owl.theme.default.css" rel="stylesheet">
+            <link href="style.css" rel="stylesheet">
+            <style>
+
+                .SBoyyy {
+                    font-family: "Audiowide", sans-serif;
+                    /*font-size: 100%;*/
+                    font-style: italic;
+                    font-weight: bolder;
+                    color: black;
+                }
+
+                .submit {
+                    /* position: absolute; */
+                    top: 55%;
+                    left: 55%;
+                    width: 25%;
+                    height: 25px;
+                    border: 2px solid;
+                    background: #9932CC;
+                    border-radius: 25px;
+                    font-size: 15px;
+                    color: whitesmoke;
+                    font-weight: 700;
+                    cursor: pointer;
+                    outline: none;
+                }
+
+                .name {
+                    /* position: absolute; */
+                    top: 15%;
+                    left: 50%;
+                    width: 50%;
+                    height: 28px;
+                    border: none;
+                    border-bottom: 3px solid;
+                    color: white;
+                    font-size: 15px;
+                    background: transparent;
+                }
+
+                    .name:hover {
+                        color: 9932CC;
+                    }
+
+                .submit:hover {
+                    color: 9932CC;
+                }
+
+                .submit:hover {
+                    background: white
+                }
+
+                .section-padding {
+                    padding: 3px 0;
+                }
+
+                .owl-dots {
+                    text-align: center;
+                    margin-top: 4px;
+                }
+
+                .owl-dot {
+                    display: inline-block;
+                    height: 5px !important;
+                    width: 5px !important;
+                    background-color: #444 !important;
+                    opacity: 0.8;
+                    border-radius: 5%;
+                    margin: 0 5px;
+                }
+            </style>
+            
+        </head>
+        <body>
+                <center>
+                    <table width="50%">
+
+                        <tr height=100>
+
+                            <td colspan="3" align="center">
+
+                                <!-- <legend>Log In Admin</legend> -->
+                                <span class="SBoyyy" style="font-size:40px;color:green"><b>E</b></span><span class="SBoyyy">asy Travels </span>
+
+                                <h1 class="SBoyyy">Log In </h1>
+                                <h3 class="SBoyyy" style="color:green">Admin </h3></br>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="SBoyyy">Enter Your User Name :</td>
+                            <td><input class="name" type="text" name="username" placeholder="username" value=""></td>
+                        </tr>
+                        <tr>
+                            <td><p class="SBoyyy">Enter Your Password :</td>
+                            <td><input class="name" type="password" name="password" placeholder="password" value=""></td>
+
+                        <tr>
+                            <td colspan="3" align="center">
+                                <input class="submit" type="submit" name="submit" value="Submit">
+                                <input class="submit" type="reset" name="reset" value="Clear"><a href="Forgot Password.php">
+                            </td>
+                            <h6 class="SBoyyy" style="color: red"><?=$error?></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <a class="SBoyyy" style="font-size:15px;color:white" href="../../start.php">BACK</a>
+                        </tr>
+
+
+                        </table>
+            </form>
+        </body>
+    </html>
+    @RenderBody()
+    Footer &copy;copyright@tamim
+    </div>
+</body>
+</html>
