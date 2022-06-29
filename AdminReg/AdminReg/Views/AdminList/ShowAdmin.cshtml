@@ -1,0 +1,32 @@
+﻿@model List<AdminReg.Models.Database.AdminList>
+@{
+    ViewBag.Title = "ShowAdmin";
+}
+
+<h2>ShowAdmin</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Password </th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>OtherInfo</th>
+    </tr>
+    @foreach (var b in Model)
+    {
+        <tr>
+            <td>@b.Id</td>
+            <td>@b.Name</td>
+            <td>@b.Password</td>
+            <td>@b.Address</td>
+            <td>@b.Phone</td>
+            <td>@b.Email</td>
+            <td>@b.OtherInfo</td>
+            <td><a class="btn btn-info" href="/AdminList/Edit/@b.Id">Edit</a></td>
+            
+        </tr>
+    }
+</table>
