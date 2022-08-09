@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h3>Currently working as Accountants:</h3>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email_ID</th>
+        <th>Date of birth</th>
+        <th>Username</th>
+
+    </tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.ID</td>
+            <td>@d.Name</td>
+            <td>@d.Address</td>
+            <td>@d.Email_ID</td>
+            <td>@d.Date_of_Birth</td>
+            <td>@d.Username</td>
+
+            <td><a href="/Accountant/Add/@d.ID">Update</a></td>
+            <td><a href="/Accountant/Delete/@d.ID">Delete</a></td>
+        </tr>
+    }
+   
+</table>
+<a class="btn btn-info" href="/Accountant/Home/">Back</a>
+

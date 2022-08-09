@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = "RoomList";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/List.css" />
+</head>
+
+<body>
+
+    <div class="Register-now">
+
+        <form action="" method="post">
+            <h1>Add New Room</h1>
+            <div class="input-style">
+                <label for="id"> ID: </label>
+                <input type="text" id="id" name="Id" value="@(Model == null ? "" : Model.Id)" />
+                @Html.ValidationMessage("Id", "", new { @class = "text-danger" }, "span")
+                <br />
+
+                <label for="name"> Hotel Name: </label>
+                <input type="text" id="name" name="Name" value="@(Model == null ? "" : Model.Name)" />
+                @Html.ValidationMessage("Name", "", new { @class = "text-danger" }, "span")
+                <br />
+
+
+                <label> Place: </label>
+                <select name="Place">
+                    <option value=""> Select</option>
+                    <option value="Dhaka" @(Model != null && Model.Place == "Dhaka" ? "selected" : "")> Dhaka</option>
+                    <option value="Khulna" @(Model != null && Model.Place == "Khulna" ? "selected" : "")> Khulna</option>
+                    <option value="Jashore" @(Model != null && Model.Place == "Jashore" ? "selected" : "")> Jashore</option>
+                    <option value="Kuakata" @(Model != null && Model.Place == "Kuakata" ? "selected" : "")> Kuakata</option>
+                    <option value="Cox'sBazar'" @(Model != null && Model.Place == "Cox'sBazar" ? "selected" : "")> Cox'sBazar'</option>
+                    <option value="Rajshahi" @(Model != null && Model.Place == "Rajshahi" ? "selected" : "")> Rajshahi</option>
+                    <option value="Sylhet" @(Model != null && Model.Place == "Sylhet" ? "selected" : "")> Sylhet</option>
+                </select>
+                @Html.ValidationMessage("Place", "", new { @class = "text-danger" }, "span")
+                <br />
+
+                <label>Type: </label>
+                <select name="Type">
+                    <option value=""> Select</option>
+                    <option value="Five Star" @(Model != null && Model.Type == "Five Star" ? "selected" : "")> Five Star</option>
+                    <option value="Three Star" @(Model != null && Model.Type == "Three Star" ? "selected" : "")> Three Star</option>
+                    <option value="Two Star" @(Model != null && Model.Type == "Two Star" ? "selected" : "")> Two Star</option>
+                    <option value="Local" @(Model != null && Model.Type == "Local" ? "selected" : "")> Local</option>
+
+                </select>
+                @Html.ValidationMessage("Type", "", new { @class = "text-danger" }, "span")
+                <br />
+
+
+                <label for="price"> Price: </label>
+                <input type="text" id="price" name="Price" value="@(Model == null ? "" : Model.Price)" />
+                @Html.ValidationMessage("Price", "", new { @class = "text-danger" }, "span")
+                <br />
+                <label for="offer"> Offer: </label>
+                <input type="text" id="offer" name="Offer" value="@(Model == null ? "" : Model.Offer)" />
+                @Html.ValidationMessage("Offer", "", new { @class = "text-danger" }, "span")
+                <br />
+
+                <label for="extrainfo"> Extra Information: </label>
+                <input type="text" id="extrainfo" name="ExtraInfo" value="@(Model == null ? "" : Model.ExtraInfo)" />
+                @Html.ValidationMessage("ExtraInfo", "", new { @class = "text-danger" }, "span")
+                <br />
+            </div>
+            <div class="submit-page">
+                <input class="btn btn-primary" type="submit" name="registration_submit" value="Submit" />
+            </div>
+            <br />
+            <a class="btn btn-info" href="/Hotel/Home/">Back</a>
+        </form>
+    </div>
+</body>
+
+</html>

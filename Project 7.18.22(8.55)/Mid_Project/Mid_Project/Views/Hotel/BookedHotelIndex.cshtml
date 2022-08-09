@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "BookedHotelIndex";
+}
+
+<h2>BookedHotelIndex</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>TouristId</th>
+        <th>TouristName</th>
+        <th>TouristPhone</th>
+        <th>HotelName</th>
+        <th>Place</th>
+        <th>Price</th>
+        <th>Offer</th>
+        <th>Days</th>
+        <th>TotalAmount</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.TouristID</td>
+            <td>@d.TouristName</td>
+            <td>@d.TouristPhone</td>
+            <td>@d.HotelName</td>
+            <td>@d.Place</td>
+            <td>@d.Price</td>
+            <td>@d.Offer</td>
+            <td>@d.Days</td>
+            <td>@d.TotalAmmount</td>
+        </tr>
+
+
+    }
+</table>
+<td><a class="btn btn-info" href="/Hotel/Home/">Back</a></td>
+

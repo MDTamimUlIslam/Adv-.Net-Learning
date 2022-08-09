@@ -1,0 +1,56 @@
+﻿*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(Img/reg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    display:flex;
+    height:100vh;
+    align-items:center;
+    justify-content:center;
+}
+.Register-now {
+    width: 330px;
+    padding: 30px;
+    border: 5px solid #34495e;
+    border-radius: 10px;
+    outline: none;
+    background: rgba(52, 73, 94, 1);
+}
+.form h1 {
+    color: aqua;
+}
+.input-style{
+    margin-top:15px;
+}
+.input-style input {
+    width: 90%;
+    background: transparent;
+    padding: 3px;
+    border: 2px solid#00ffff;
+    border-radius: 5px;
+    color: aqua;
+    outline: none;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.input-style label {
+    color: aqua;
+}
+.Register-page input {
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.as{
+    color:white;
+}

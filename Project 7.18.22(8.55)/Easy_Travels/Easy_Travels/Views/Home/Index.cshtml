@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<br />
+<div class="container">
+    <div class="form-group">
+        <div class="row">
+            <label class="control-label col-sm-2" for=" User">Username:</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="text" id="Username" name="Username" onchange="UserCheck()" />
+            </div>
+        </div>
+        <div class="row">
+            <label class="col-sm-2"></label>
+            <div class="col-sm-10">
+                <p id="Status" />
+            </div>
+        </div>
+        <div class="row">
+            <label class="control-label col-sm-2" for="Pwd">Password:</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="text" id="Password" name="Password" onchange="UserCheck()" />
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        function UserCheck() {
+            $("#Status").html("Checking....");
+            $.post("@Url.Action("CheckUserName", "Accountant")";
+            {
+                userdata: $("#Username").val()
+            }
+            function(data) {
+                if (data == 0) {
+                    $("#Status").html('<font color="Green">Available! You can take it.</font>');
+                    $("#Username").css("border-color", "Green");
+                }
+                else {
+                    $("#Status").html('<font color="Red">Username already exists! Try another one.</font>');
+                    $("#Username").css("border-color", "Red");
+                }
+            };
+        }
+</script>

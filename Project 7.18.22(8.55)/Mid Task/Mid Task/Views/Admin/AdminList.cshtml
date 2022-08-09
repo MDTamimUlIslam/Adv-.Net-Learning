@@ -1,0 +1,34 @@
+﻿@model List<Mid_Task.Models.Database.AdminList>
+@{
+    ViewBag.Title = "AdminList";
+}
+
+<h2>ShowAdmin</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Password </th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>OtherInfo</th>
+    </tr>
+    @foreach (var b in Model)
+    {
+        <tr>
+            <td>@b.Id</td>
+            <td>@b.Name</td>
+            <td>@b.Paaword</td>
+            <td>@b.Phone</td>
+            <td>@b.Email</td>
+            <td>@b.OtherInfo</td>
+
+            <td><a class="btn btn-info" href="/Admin/AdminEdit/@b.Id">Edit</a></td>
+            <td><a class="btn btn-info" href="/Admin/AdminDelete/@b.Id">Delete</a></td>
+
+        </tr>
+    }
+
+</table>
+<td><a class="btn btn-info" href="/Admin/AdminHome">Back</a></td>

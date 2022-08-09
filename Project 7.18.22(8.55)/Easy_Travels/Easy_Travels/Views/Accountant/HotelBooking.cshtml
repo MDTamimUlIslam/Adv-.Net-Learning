@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "HotelBooking";
+}
+
+<h2>Hotel Booking Pending Requests!</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Tourist ID</th>
+        <th>Tourist Name</th>
+        <th>Tourist Phone</th>
+        <th>Hotel Name</th>
+        <th>Place</th>
+        <th>Type</th>
+        <th>Price</th>
+        <th>Offer</th>
+        <th>Additional Info</th>
+        <th>No of Days</th>
+
+    </tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+
+            <td>@d.TouristID</td>
+            <td>@d.TouristName</td>
+            <td>@d.TouristPhone</td>
+            <td>@d.HotelName</td>
+            <td>@d.Place</td>
+            <td>@d.Type</td>
+            <td>@d.Price</td>
+            <td>@d.Offer</td>
+            <td>@d.ExtraInfo</td>
+            <td>@d.No_of_Days</td>
+
+            <td><a href="/Accountant/BookedHotel/@d.TouristID">Confirm Booking</a></td>
+            <td><a href="/Accountant/DeleteBooking/@d.TouristID">Delete</a></td>
+        </tr>
+    }
+</table>
+<a class="btn btn-info" href="/Accountant/Home/">Back</a>
+
+

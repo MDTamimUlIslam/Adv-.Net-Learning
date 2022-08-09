@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "AdminReg";
+}
+
+<h2>AdminReg</h2>
+
+
+<form action="" method="Post">
+    <table border="0" width="50%">
+        <tr height=50>
+            <td width="200px">Admin ID</td>
+            <td width="300px">
+                <input type="text" name="Id" value="">
+            </td>
+        </tr>
+        <tr height=50>
+            <td>Admin Name </td>
+            <td><input type="text" name="Name" value="@(Model == null ? "" : Model.Name)"></td>
+            <td width="200px">@Html.ValidationMessage("Name", "", new { @class = "text-danger" }, "span")</td>
+        </tr>
+        <tr height=50>
+            <td>Password</td>
+            <td><input type="password" name="Paaword" value="@(Model == null ? "" : Model.Password)"></td>
+            <td width="200px">@Html.ValidationMessage("Password", "", new { @class = "text-danger" }, "span")</td>
+
+        </tr>
+        <tr height=50>
+            <td>Phone</td>
+            <td><input type="text" name="Phone" value="@(Model == null ? "" : Model.Phone)"></td>
+            <td width="200px">@Html.ValidationMessage("Phone", "", new { @class = "text-danger" }, "span")</td>
+
+        </tr>
+        <tr height=50>
+            <td>Email</td>
+            <td><input type="text" name="Email" value="@(Model == null ? "" : Model.Email)"></td>
+            <td width="200px">@Html.ValidationMessage("Email", "", new { @class = "text-danger" }, "span")</td>
+
+        </tr>
+        <tr height=50>
+            <td>Other Info</td>
+            <td><input type="text" name="OtherInfo" value=""></td>
+            <td><input type="submit" name="submit" value="Submit"></td>
+            <td><input type="reset" name="reset" value="Reset"></td>
+
+
+        </tr>
+    </table>
+    <td><a class="btn btn-info" href="/Admin/AdminHome">Back</a></td>
+
+</form>

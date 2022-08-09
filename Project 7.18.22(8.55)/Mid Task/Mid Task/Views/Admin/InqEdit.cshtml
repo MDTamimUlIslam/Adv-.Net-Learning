@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "InqEdit";
+}
+
+<h2>InqEdit</h2>
+<form action="" method="Post">
+    <table border="0" width="50%">
+        <tr height=50>
+            <td width="200px"> ID</td>
+            <td width="300px">
+                <input type="text" name="Id" value="@Model.Id">
+            </td>
+        </tr>
+        <tr height=50>
+            <td> Name </td>
+            <td><input type="text" name="Name" value="@Model.Name"></td>
+        </tr>
+        <tr height=50>
+            <td> Question </td>
+            <td><input type="text" name="Question" value="@Model.Question"></td>
+        </tr>
+        <tr height=50>
+            <td> Answer </td>
+            <td><input type="text" name="Answer" value="@Model.Answer"></td>
+            <td><input type="submit" name="submit" value="Submit"></td>
+            <td><input type="reset" name="reset" value="Reset"></td>
+        </tr>
+
+    </table>
+</form>
+<td><a class="btn btn-info" href="/Admin/InqList">Back</a></td>

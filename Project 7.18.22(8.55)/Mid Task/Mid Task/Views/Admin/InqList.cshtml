@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "InqList";
+}
+
+<h2>Inquires</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Question</th>
+        <th>Answer</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.Id</td>
+            <td>@d.Name</td>
+            <td>@d.Question</td>
+            <td>@d.Answer</td>
+            <td><a class="btn btn-info" href="/Admin/InqEdit/@d.Id">Edit</a></td>
+            <td><a class="btn btn-info" href="/Admin/InqDelete/@d.Id">Delete</a></td>
+
+
+        </tr>
+    }
+</table>
+<td><a class="btn btn-info" href="/Admin/AdminHome">Back</a></td>
+

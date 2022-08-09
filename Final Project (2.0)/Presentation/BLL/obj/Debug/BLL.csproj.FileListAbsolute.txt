@@ -1,0 +1,14 @@
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\BLL.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\BLL.pdb
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\AutoMapper.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\DAL.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\EntityFramework.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\DAL.pdb
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\DAL.dll.config
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\AutoMapper.xml
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\bin\Debug\EntityFramework.xml
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\obj\Debug\BLL.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\BLL\obj\Debug\BLL.pdb

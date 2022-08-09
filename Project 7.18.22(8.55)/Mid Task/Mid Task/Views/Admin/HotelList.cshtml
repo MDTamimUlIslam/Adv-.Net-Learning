@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "HotelList";
+}
+
+<h2>Hotel List</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>Type</th>
+        <th>Place</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+        <tr>
+            <td>@d.Id</td>
+            <td>@d.Name</td>
+            <td>@d.Password</td>
+            <td>@d.Type</td>
+            <td>@d.Place</td>
+            <td>@d.Address</td>
+            <td>@d.Phone</td>
+            <td>@d.Email</td>
+            <td><a class="btn btn-info" href="/Admin/HotelEdit/@d.Id">Edit</a></td>
+            <td><a class="btn btn-info" href="/Admin/HotelDelete/@d.Id">Delete</a></td>
+        </tr>
+    }
+</table>
+<td><a class="btn btn-info" href="/Admin/AdminHome">Back</a></td>
+
+

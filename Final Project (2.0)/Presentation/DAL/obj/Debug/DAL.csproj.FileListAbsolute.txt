@@ -1,0 +1,10 @@
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\bin\Debug\DAL.dll.config
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\bin\Debug\DAL.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\bin\Debug\DAL.pdb
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\bin\Debug\EntityFramework.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\bin\Debug\EntityFramework.xml
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\obj\Debug\DAL.dll
+E:\Tamim AIUB\Semester 10\Adv .net\Final Project (01)\Presentation\DAL\obj\Debug\DAL.pdb

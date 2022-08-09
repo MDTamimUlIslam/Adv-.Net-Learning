@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<h1>Login Page</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/login.css" />
+</head>
+
+<body>
+    
+        <form action="" method="post">
+
+            <label for="Email"> Email: </label>
+            <input type="email" id="email" name="Email" placeholder="Enter Email" value="@(Model == null ? "" : Model.Email)" />
+            @Html.ValidationMessage("Email", "", new { @class = "text-danger" }, "span")
+            <br />
+
+
+            <label for="password"> Password: </label>
+            <input type="password" id="name" name="Password" placeholder="Enter Password" value="@(Model == null ? "" : Model.Password)" />
+            @Html.ValidationMessage("Password", "", new { @class = "text-danger" }, "span")
+            <br />
+
+            <input class="btn btn-primary" type="submit" name="Login_submit" value="Login" />
+            <p>If you are not registerd, click Registration button <a class="btn btn-primary" href="/Hotel/HotelReg">Registration</a></p>
+
+        </form>
+    
+</body>
+
+</html>
+
+

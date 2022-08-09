@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm())
+
+{
+    @Html.AntiForgeryToken()
+<form action="" method="post">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <label for="Username"> Username: </label>
+        <input type="text" id="username" name="Username" placeholder="Enter Username" value="@(Model == null ? "" : Model.Username)" />
+        @Html.ValidationMessage("Username", "", new { @class = "text-danger" }, "span")
+    </div>
+
+    <div class="form-group">
+        <label for="password"> Password: </label>
+        <input type="password" id="name" name="Password" placeholder="Enter Password" value="@(Model == null ? "" : Model.Password)" />
+        @Html.ValidationMessage("Password", "", new { @class = "text-danger" }, "span")
+    </div>
+
+
+   
+    <label>@ViewBag.Notification</label><br />
+    <input class="btn btn-primary" type="submit" name="Login_submit" value="Login" />
+
+    <p>If you are not registered, click here! <a href="/Accountant/Create">Registration</a></p>
+
+</form>
+}
+

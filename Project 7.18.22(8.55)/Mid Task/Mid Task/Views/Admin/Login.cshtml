@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+
+<form action="" method="Post">
+    <input type="email" name="Email" value="@(Model == null ? "" : Model.Email)" placeholder="Email" class="form-control" />
+    @Html.ValidationMessage("Email", "", new { @class = "text-danger" }, "span")
+    <input type="password" name="Paaword" value="@(Model == null ? "" : Model.Password)" placeholder="Password" class="form-control" />
+    @Html.ValidationMessage("Password", "", new { @class = "text-danger" }, "span")
+    <input class="btn btn-primary" type="submit" name="Login_submit" value="Login" />
+</form>
